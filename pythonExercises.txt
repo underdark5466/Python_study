@@ -1,0 +1,65 @@
+Chapter 4
+
+#4-3
+numbers= list(range(1,21))
+for x in numbers:
+	print(x)
+
+#4-4
+nbrs=list(range(1,1000001))
+#for i in nbrs:
+	#print(i)
+#4-5
+nrs=list(range(1,1000001))
+print(min(nrs))
+print(max(nrs))
+print(sum(nrs))
+#4-6
+odd=list(range(1,21,2))
+print(odd)
+#4-7
+multiples=[]
+for multiple in range(3,31):
+	multiples.append(multiple * 3)
+print(multiples)
+#4-8
+cubes=[]
+for cube in range(1,11):
+	cubes.append(cube**3)
+print(cubes)
+#4-9
+com_squares = [i**3 for i in range(1,11)]
+print(com_squares)
+
+#4-10
+my_foods = ['pizza', 'falafel', 'carrot cake', 'ice cream', 'pancakes']
+print("The first three items in the list are:")
+for food in my_foods[:3]:
+	print(food)
+print("\nThree items from the middle of the list are:")
+for food in my_foods[1:4]:
+	print(food)
+print("\nThe last three items in the list are:")
+for food in my_foods[-3:]:
+	print(food)
+	
+#4-11
+myfoods = ['pizza', 'falafel', 'carrot cake', 'ice cream', 'pancakes']
+friendfoods = myfoods[:]
+myfoods.append('barbecue')
+friendfoods.append('spagetti')
+print("My friend’s favorite pizzas are: ")
+for friend in friendfoods:
+	print(friend)
+print("My pizzas are: ")
+for food in myfoods:
+	print(food)
+#4-13
+offers=('chicken soup','cutlets','borscht','peking duck','squid in sauce')
+for food in offers:
+    print(food.title())
+#offers[1] = 'sdfsdf'                           
+
+offers=('\nchicken soup','cutlets','borscht','italian spagetti','fried swordfish')
+for food in offers:
+    print(food.title()) 
